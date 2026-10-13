@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savatcha - Online Magazin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><i class="fa-solid fa-store"></i> Techno<span>Shop</span></a>
+            <nav class="nav-links">
+                <a href="index.html">Katalog</a>
+                <a href="cart.html" class="active cart-link">
+                    <i class="fa-solid fa-cart-shopping"></i> Savatcha
+                    <span id="cart-badge">0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <h2>Sizning Savatchangiz</h2>
+        <div class="cart-wrapper">
+            <div id="cart-items-container" class="cart-items-list">
+                <!-- Savatchadagi mahsulotlar shu yerga chiqadi -->
+            </div>
+            
+            <div class="cart-summary">
+                <h3>Xulosa</h3>
+                <div class="summary-line">
+                    <span>Jami mahsulotlar:</span>
+                    <span id="summary-count">0 ta</span>
+                </div>
+                <div class="summary-line total-line">
+                    <span>Jami summa:</span>
+                    <span id="summary-price">0 so'm</span>
+                </div>
+                <a href="checkout.html" id="checkout-link" class="btn btn-block disabled">Buyurtma berishga o'tish</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 TechnoShop. Barcha huquqlar himoyalangan.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyurtma berish - Online Magazin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><i class="fa-solid fa-store"></i> Techno<span>Shop</span></a>
+            <nav class="nav-links">
+                <a href="index.html">Katalog</a>
+                <a href="cart.html" class="cart-link">
+                    <i class="fa-solid fa-cart-shopping"></i> Savatcha
+                    <span id="cart-badge">0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <div class="checkout-container">
+            <h2>Buyurtmani rasmiylashtirish</h2>
+            
+            <form id="order-form" class="checkout-form">
+                <div class="form-group">
+                    <label for="fullname">Ismingiz va Familiyangiz *</label>
+                    <input type="text" id="fullname" placeholder="Masalan: Ali Valiyev" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefon raqamingiz *</label>
+                    <input type="tel" id="phone" placeholder="+998 90 123 45 67" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Yetkazib berish manzili *</label>
+                    <textarea id="address" rows="3" placeholder="Shahar, tuman, ko'cha va uy raqami" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="comment">Izoh (ixtiyoriy)</label>
+                    <textarea id="comment" rows="2" placeholder="Qo'shimcha istaklaringiz"></textarea>
+                </div>
+
+                <div class="order-preview">
+                    <h4>Buyurtmangiz tarkibi:</h4>
+                    <div id="checkout-items-list"></div>
+                    <div class="checkout-total">
+                        <span>To'lanadigan summa:</span>
+                        <strong id="checkout-total-price">0 so'm</strong>
+                    </div>
+                </div>
+
+                <button type="submit" id="submit-btn" class="btn btn-block">
+                    <i class="fa-paper-plane"></i> Buyurtmani Tasdiqlash
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 TechnoShop. Barcha huquqlar himoyalangan.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

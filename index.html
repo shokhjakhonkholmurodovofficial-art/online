@@ -1,0 +1,48 @@
+s<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Magazin - Bosh Sahifa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navigatsiya -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><i class="fa-solid fa-store"></i> Techno<span>Shop</span></a>
+            <nav class="nav-links">
+                <a href="index.html" class="active">Katalog</a>
+                <a href="cart.html" class="cart-link">
+                    <i class="fa-solid fa-cart-shopping"></i> Savatcha
+                    <span id="cart-badge">0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="container">
+            <h1>Bizning Online Magazinga Xush Kelibsiz!</h1>
+            <p>Eng sifatli mahsulotlar va qulay narxlar to'plami.</p>
+        </div>
+    </section>
+
+    <!-- Mahsulotlar Katalogi -->
+    <main class="container main-content">
+        <h2>Mahsulotlar Katalogi</h2>
+        <div id="product-list" class="product-grid">
+            <!-- JavaScript orqali mahsulotlar yuklanadi -->
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 TechnoShop. Barcha huquqlar himoyalangan.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
